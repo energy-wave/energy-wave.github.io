@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>ECMAScript-characteristic | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ECMAScript 6let or const变量的解构赋值 数组，let [a, b, c] = [1, 2, 3];  对象，let { foo, bar } = { foo: ‘aaa’, bar: ‘bbb’ };  字符串，const [a, b, c, d, e] = ‘hello’;   字符串 模板字符串 123456function fn() &amp;#123;  return &quot;H">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ECMAScript-characteristic">
+<meta property="og:url" content="http://yoursite.com/2019/08/09/ECMAScript-characteristic/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ECMAScript 6let or const变量的解构赋值 数组，let [a, b, c] = [1, 2, 3];  对象，let { foo, bar } = { foo: ‘aaa’, bar: ‘bbb’ };  字符串，const [a, b, c, d, e] = ‘hello’;   字符串 模板字符串 123456function fn() &amp;#123;  return &quot;H">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-09T08:51:55.253Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="ECMAScript-characteristic">
+<meta name="twitter:description" content="ECMAScript 6let or const变量的解构赋值 数组，let [a, b, c] = [1, 2, 3];  对象，let { foo, bar } = { foo: ‘aaa’, bar: ‘bbb’ };  字符串，const [a, b, c, d, e] = ‘hello’;   字符串 模板字符串 123456function fn() &amp;#123;  return &quot;H">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ECMAScript-characteristic" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ECMAScript-characteristic" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/09/ECMAScript-characteristic/" class="article-date">
   <time datetime="2019-08-09T08:51:46.000Z" itemprop="datePublished">2019-08-09</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/09/ECMAScript-characteristic/">ECMAScript-characteristic</a>
+    <h1 class="article-title" itemprop="name">
+      ECMAScript-characteristic
     </h1>
   
 
@@ -147,105 +149,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-JavaScript-advanced" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/09/JavaScript-advanced/" class="article-date">
-  <time datetime="2019-08-09T08:47:17.000Z" itemprop="datePublished">2019-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/09/JavaScript-advanced/">JavaScript-advanced</a>
-    </h1>
+    <a href="/2019/08/09/JavaScript-advanced/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JavaScript-advanced</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="javascript-高级"><a href="#javascript-高级" class="headerlink" title="javascript 高级"></a>javascript 高级</h1><h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><ul>
-<li><p>原型链</p>
-  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Animal.prototype.color = <span class="string">"white"</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> cat1 = <span class="keyword">new</span> Animal(<span class="string">"大毛"</span>);</span><br><span class="line"><span class="keyword">var</span> cat2 = <span class="keyword">new</span> Animal(<span class="string">"二毛"</span>);</span><br><span class="line"></span><br><span class="line">cat1.color; <span class="comment">// 'white'</span></span><br><span class="line">cat2.color; <span class="comment">// 'white'</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>constructor 属性</p>
-  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">P</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">P.prototype.constructor === P <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/09/JavaScript-advanced/" data-id="cjz3vg9hw0001u0vj49ky6zpi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/09/hello-world/" class="article-date">
-  <time datetime="2019-08-09T08:43:02.411Z" itemprop="datePublished">2019-08-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/09/hello-world/" data-id="cjz3vg9i30002u0vjqifbeln1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
